@@ -1,0 +1,339 @@
+.mainBg {
+    padding: 140px 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .mainBg::before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0.1;
+    position: absolute;
+    background: url("https://lh3.googleusercontent.com/soR6JAuB0k-X3Az9G8-NJG9Cfoc4kyfgPUCYVtp6Ker9QQSHg9UQA52eFduoL_v_E5dHnnaB3LtZjBIAZdH6p5e2rLOm7aVm6eVoMg=w600");
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .textContent h1 {
+    margin-bottom: 30px;
+    font-size: 42px;
+    font-weight: 800;
+}
+.textContent p {
+    font-weight: 400;
+    font-size: 28px
+}
+
+.btnContainer {
+    display:flex;
+    gap: 180px;
+    margin-top: 60px;
+    margin-left: 160px;
+    margin-bottom: 80px;
+}
+
+.btnBox {
+    padding: 0 50px;
+    flex: flex-col;
+}
+
+.btnImg {
+    width: 18rem;
+    height: 18rem;
+    text-align: center;
+}
+
+.img {
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnCustom {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    margin-left: 120px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+/* MyNFT */
+.btnText1 {
+    background: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btnText1 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnText1:before,
+.btnText1:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #b621fe;
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, 0),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btnText1:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btnText1:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btnText1:hover {
+    color: #b621fe;
+    background: transparent;
+}
+
+.btnText1:hover:before {
+    height: 100%;
+}
+
+.btnText1:hover:after {
+    width: 100%;
+}
+
+.btnText1 span:before,
+.btnText1 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #b621fe;
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, 0),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btnText1 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btnText1 span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.btnText1 span:hover:before {
+    height: 100%;
+}
+
+.btnText1 span:hover:after {
+    width: 100%;
+}
+
+/* Draw NFT */
+.btnText2 {
+    background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btnText2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnText2:before,
+.btnText2:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btnText2:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btnText2:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btnText2:hover {
+    color: rgba(251, 75, 2, 1);
+    background: transparent;
+}
+
+.btnText2:hover:before {
+    height: 100%;
+}
+
+.btnText2:hover:after {
+    width: 100%;
+}
+
+.btnText2 span:before,
+.btnText2 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251, 75, 2, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btnText2 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btnText2 span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.btnText2 span:hover:before {
+    height: 100%;
+}
+
+.btnText2 span:hover:after {
+    width: 100%;
+}
+
+
+/* Make NFT */
+.btnText3 {
+    background: linear-gradient(0deg, rgba(22, 9, 240, 1) 0%, rgba(49, 110, 244, 1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btnText3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btnText3:before,
+.btnText3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(49, 110, 244, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btnText3:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btnText3:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btnText3:hover {
+    color: rgba(49, 110, 244, 1);
+    background: transparent;
+}
+
+.btnText3:hover:before {
+    height: 100%;
+}
+
+.btnText3:hover:after {
+    width: 100%;
+}
+
+.btnText3 span:before,
+.btnText3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(49, 110, 244, 1);
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+}
+
+.btnText3 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btnText3 span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.btnText3 span:hover:before {
+    height: 100%;
+}
+
+.btnText3 span:hover:after {
+    width: 100%;
+}
